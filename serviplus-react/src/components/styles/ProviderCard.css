@@ -1,0 +1,9 @@
+.card {
+  width: auto; /* Ancho fijo para todas las tarjetas */
+  height: 350px; /* Alto fijo para todas las tarjetas */
+}
+
+.card img {
+  width: 100%; /* Para que las imágenes ocupen todo el ancho del contenedor */
+  height: 100%; /* Para que las imágenes ocupen todo el alto del contenedor */
+}
