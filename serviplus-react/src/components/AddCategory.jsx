@@ -60,10 +60,10 @@ export const AddCategory = () => {
     }
   };
   return (
-    <div className="relative p-4 w-full max-w-md max-h-full">
-      <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
-        <div className="flex flex-col items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-          <h3 className="py-2 text-lg font-semibold text-gray-900 dark:text-white ">
+    <div className="relative p-2 w-full max-w-md max-h-full">
+      <div className="relative rounded-lg shadow dark:bg-slate-700/5">
+        <div className="flex flex-col items-center justify-between py-2 md:p-5 border rounded-xl dark:border-slate-900/5">
+          <h3 className="p-2 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-tomaso">
             Registra un nuevo servicio
           </h3>
           <form
@@ -73,7 +73,7 @@ export const AddCategory = () => {
             encType="multipart/form-data"
             action="http://localhost:8080/admin/category"
           >
-            <div className="grid gap-4 mb-4 grid-cols-2">
+            <div className="grid gap-4  mb-6 grid-cols-2">
               <div className="col-span-2">
                 <label
                   htmlFor="name"
@@ -87,7 +87,7 @@ export const AddCategory = () => {
                   id="name"
                   value={registerCategoryName}
                   onChange={onInputChange}
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-900 dark:border-gray-900/5 dark:placeholder-gray-500 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   placeholder="Type product name"
                   required
                 />
@@ -104,7 +104,7 @@ export const AddCategory = () => {
                   name="file"
                   id="file"
                   onChange={onInputChange}
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-900 dark:border-gray-900/5 dark:placeholder-gray-500 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   placeholder="Agregar imagen"
                   required
                 />

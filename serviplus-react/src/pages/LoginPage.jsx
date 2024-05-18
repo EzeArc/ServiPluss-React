@@ -5,7 +5,9 @@ export const LoginPage = () => {
   return (
     <>
       <HeroContainer img={"/contacto.webp"} />
-      <Login />;
+      <section className="max-w-8xl mx-auto py-20 px-20">
+        <Login />
+      </section>
     </>
   );
 };
